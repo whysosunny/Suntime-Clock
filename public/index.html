@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="suntime">
+<head>
+    <meta charset="UTF-8">
+    <title>SunTime</title>
+    <link href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="MainController">
+
+    <div class="wrapper">
+        <div class="clock-container">
+            <div class="time">
+
+                <div class="main-digits">
+                    <span>{{clock.time | date: 'hh:mm'}}</span>
+                </div>
+
+                <div class="support-elements">
+                    <div class="seconds">
+                        <span>{{clock.time | date:'ss'}}</span>
+                    </div>
+
+                    <div class="am-pm">
+                        <span>{{clock.time | date:'a'}}</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <a href="#"><div class="clock-btn">Clock</div></a>
+                <a href="#"><div class="timer-btn">Timer</div></a>
+                <a href="#"><div class="alarm-btn">Alarm</div></a>
+
+            </div>
+
+            <div ng-show="timer" class="sound-selector">
+                <span>Sound: </span>
+                <select class="sound-dropdown">
+                    <option value="ring">Ring</option>
+                    <option value="ring">Ring</option>
+                    <option value="ring">Ring</option>
+                    <option value="ring">Ring</option>
+                </select>
+                <a  class="custom-sound-link">Custom Sound</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

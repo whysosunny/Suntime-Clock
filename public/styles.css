@@ -68,6 +68,7 @@ body {
 
 .buttons a div:active {
     transform: translate(0px,3px);
+    height: 47px;
     -webkit-transform: translate(0px,3px);
     border-bottom: 1px solid #388E3C;
 }

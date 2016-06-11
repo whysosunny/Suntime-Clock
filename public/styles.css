@@ -64,6 +64,7 @@ body {
     /*border-bottom: 4px solid #669644;*/
     border-bottom: 4px solid #1B5E20;
     text-shadow: 0 -2px #669644;
+    transition: all 0.1s;
 }
 
 .buttons a div:active {
